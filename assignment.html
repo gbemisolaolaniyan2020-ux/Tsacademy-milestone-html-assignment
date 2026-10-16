@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone Project - HTML</title>
+</head>
+<body>
+   
+    <header>
+        <!-- <span><strong>Logo</strong></span> -->
+        <img src="https://res.cloudinary.com/vqasuf1k/image/upload/v1784570179/icon_image_dydl4i.png" 
+        alt="logo image" width="50px" height="50px"> 
+        <figcaption hidden>Image representing the logo text</figcaption>
+    </header>
+    <hr>
+
+    <main>
+        
+        <section>
+            <h1>Explore Our Solar System Through Data</h1>
+            <p>Understand the planets not just by name,
+                but by measurable facts. From size and mass to 
+                gravity and density, this page breaks down the solar 
+                system in a clear, data-driven way.
+            </p>
+
+            <a href="#planet-data">Explore the data</a> 
+            <a href="#contact">Contact us</a>
+        
+        </section>
+        <br>
+        <hr>
+
+        <section>
+            <h2>How Planetary Data Helps Us Understand Space</h2>
+            <p>Planetary science goes beyond images. Comparing <strong>mass, diameter,
+                gravity, </strong> and <strong>density,</strong> 
+            we gain insights into how planets form, behave, and interact within the solar system.</p>
+            <br>
+
+            <video width="500" height="300" autoplay muted loop>
+                <source src="solar main 2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </section>
+        <br> 
+        <hr>
+
+        <section>
+            <h2>Visualizing the Differences Between Planets</h3>
+            <p>Each planet in our solar system has unique physical characteristics.
+                Visual comparisons help highlight how vastly different terrestrial planets 
+            are from gas giants and ice giants. </p> <br>
+             
+            <figure>   
+            <img src="https://res.cloudinary.com/cqfymg7o/image/upload/v1785345820/solar-panels-roof-solar-cell_335224-1324_lzoipm.jpg" 
+            alt="a solar panel image" width="500px" height="250px">
+             <figcaption>An Image showing the sun and the solar panel</figcaption>
+             </figure>
+
+             <br> <br>
+            <hr>
+        </section>
+
+        <section id="planet-data">
+            <h2>Planetary Facts at a Glance</h2>
+            <p>Below is a comparative table of major planets in our solar system. 
+                The data highlights key physical properties used by astronomers and researchers worldwide.
+            </p>
+        
+        <br> 
+
+        <table border="1">
+            <caption>Data about the planets of our solar system (Planetary facts taken from Nasa)</caption>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Name</th>
+                <th>Mass (10 24kg)</th>
+                <th>Diameter (km)</th>
+                <th>Density (kg/m3)</th>
+                <th>Gravity (m/s2)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4" colspan="2">Terrestrial Planets</th>
+                <td>Mercury</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+
+            <tr>
+                <td>Venus</td>
+                <td>4.87</td>
+                <td>12,104</td>
+                <td>5243</td>
+                <td>8.9</td>
+            </tr>
+
+            <tr>
+                <td>Earth</td>
+                <td>5.97</td>
+                <td>12,756</td>
+                <td>5514</td>
+                <td>9.8</td>
+            </tr>
+
+            <tr>
+                <td>Mars</td>
+                <td>0.642</td>
+                <td>6,792</td>
+                <td>3933</td>
+                <td>3.7</td>
+            </tr>
+
+            <tr>
+                <th rowspan="4">Jovian Planets</th>
+                <th rowspan="2">Gas Giants</th>
+                <td>Jupiter</td>
+                <td>1898</td>
+                <td>142,984</td>
+                <td>1326</td>
+                <td>23.1</td>
+            </tr>
+
+            <tr>
+                <td>Saturn</td>
+                <td>568</td>
+                <td>120,536</td>
+                <td>687</td>
+                <td>9.0</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Ice Giants</th>
+                <td>Uranus</td>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1271</td>
+                <td>8.7</td>
+            </tr>
+
+            <tr>
+                <td>Neptune</td>
+                <td>102</td>
+                <td>49,528</td>
+                <td>1638</td>
+                <td>11.0</td>
+            </tr>
+
+            <tr>
+                <th rowspan="4" colspan="2">Dwarf Planets</th>
+                <td>Pluto</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+        </tbody>
+        </table>
+        </section>
+        <br> <br>
+
+            <hr>
+
+            <section id="contact">
+                <h2>Have Questions About Planetary Science? </h2>
+                <p>Interested in learning more about space, astronomy, or how 
+                    planetary data is collected and analyzed? 
+                    <br>Reach out and we'll get back to you. 
+                </p>
+
+
+                <form action="/register" method="post">
+                    <label for="fname">Full Name*</label> <br>
+                    <input type="text" id="fname" name="fname"  minlength="10" maxlength="20" placeholder="Full Name"> <br> <br>
+
+                    <label for="email">Email*</label> <br>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com"> <br> <br>
+
+                    <label for="city">City*</label> <br>
+                    <select name="city" id="city" " required>
+                        <option value="">Choose city</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="abuja">Abuja</option>
+                        <option value="port-harcourt">Port Harcourt</option>
+                        <option value="abeokuta">Abeokuta</option>
+                        <option value="ibadan">Ibadan</option>
+                        <option value="onitsha">Onitsha</option>
+                        <option value="aba">Aba</option>
+                        <option value="benin">Benin</option>
+                        <option value="akure">Akure</option>
+                        <option value="Ado">Ado</option>
+                    </select><br><br>
+
+                    <label for="phone">Phone Number*</label> <br>
+                    <input type="tel" id="phone" name="phone" maxlength="11" placeholder="Please enter a valid phone number." required> <br><br>
+
+                    <label for="message">Message*</label><br>
+                    <textarea name="message" id="message" rows="6"
+                    placeholder="Enter your message" maxlength="100" required></textarea><br>
+                    <span>100 characters</span>
+
+
+                    <h3>How should we contact you?</h3>
+                    <label>
+                        <input type="radio" name="contact" value="phone"> Phone
+                    </label>
+                    <label>
+                        <input type="radio" name="contact" value="email"> Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contact" value="both"> Both
+                    </label>
+
+                    <h3>How did you hear about us?</h3>
+                    <input type="checkbox" id="friend" name="source" value="friend" checked>
+                    <label for="friend">Friend</label>
+
+                     <input type="checkbox" id="tsacademy" name="source" value="tsacademy" >
+                    <label for="tsacademy">TS Academy</label>
+
+                     <input type="checkbox" id="others" name="source" value="others" >
+                    <label for="others">Others</label> <br><br>
+
+                    <button  type="submit">Submit</button>
+                </form>
+               
+            </section> <br> <br>
+            <hr>
+
+            <footer>
+
+                <section>
+                    <h4>About</h4>
+
+                    <ul>
+                        <li><a href="#">Planetary Facts</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">World Records</a></li>
+                        <li><a href="#">Guides</a></li>
+                    </ul>
+                </section><br>
+
+                <hr>
+
+                <p>
+                    <span>&copy;2026 My Name.</span> 
+                    <span>Design by Gbemisola.</span> 
+                    <span>All rights reserved.</span>
+                </p>
+
+                <p>
+                    <span><a href="#">Privacy & Policy</a></span>  
+                    <span><a href="#">Terms & Condition</a></span>
+                </p>
+
+            </footer>
+
+    </main>
+</body>
+</html>
